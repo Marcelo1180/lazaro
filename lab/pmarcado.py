@@ -63,13 +63,13 @@ df.set_index(keys=["key_hora"], inplace=True)
 intx = df.between_time(start_time="05:00:00", end_time="08:40:00")
 print intx.groupby(["Fecha", "Nombre"]).min()
 
-inty = df.between_time(start_time="08:40:00", end_time="12:00:00")
-inty2 = inty.groupby(["Fecha", "Nombre", "Hora"])
-# inty2['counter'] = range(len(inty2))
-print inty2
+# inty = df.between_time(start_time="08:40:00", end_time="12:00:00")
+# inty2 = inty.groupby(["Fecha", "Nombre", "Hora"])
+# # inty2['counter'] = range(len(inty2))
+# print inty2
 
-intx = df.between_time(start_time="05:00:00", end_time="08:40:00")
-print intx.groupby(["Fecha", "Nombre"]).min()
+# intx = df.between_time(start_time="05:00:00", end_time="08:40:00")
+# print intx.groupby(["Fecha", "Nombre"]).min()
 
 
 
